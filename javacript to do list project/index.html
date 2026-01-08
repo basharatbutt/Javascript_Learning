@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h2>To-Do List</h2>
+    <input type="text" id="mytask" placeholder="Type Here">
+    <button onclick="ontask()">Add</button>
+    <ul id="displayarea"></ul>
+
+    <script>
+        let taskList = [];
+
+        function ontask() {
+            let task = document.getElementById("mytask").value;
+            
+            if (task === ""){
+                alert("Please write something");
+                return;
+            }
+
+            taskList.push(task);
+
+            document.getElementById("mytask").value = "";
+
+            displaytask();
+        }
+
+        function displaytask() {
+            let listHTML = "";
+            
+            for (let i = 0; i < taskList.length; i++) {
+                listHTML += "<li>" + taskList[i] + "</li>";
+            }
+
+            document.getElementById("displayarea").innerHTML = listHTML;
+        }
+    </script>
+</body>
+</html>
