@@ -1,0 +1,8 @@
+nav,ul{
+    display: flex;
+    gap:34px;
+    background-color: blueviolet;
+}
+nav{
+    padding: 15px;
+}
