@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boxes{
+        display: flex;
+        gap: 15px;
+    }
+     .box1{
+        width: 102px;
+        height: 103px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        cursor: pointer;
+        
+     }
+     .box2{
+        width: 102px;
+        height: 103px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        cursor: pointer;
+        
+     }
+     .box3{
+        width: 102px;
+        height: 103px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        cursor: pointer;
+        
+     }
+     .box4{
+        width: 102px;
+        height: 103px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        cursor: pointer;
+        
+     }
+</style>
+<body>
+    <h2>Color fliper</h2>
+    <div class="boxes">
+    <button class="box1">b1</button>
+    <button class="box2">b2</button>
+    <button class="box3">b3</button>
+    <button class="box4">b4</button>
+    </div>
+    <div id="back"></div>
+    
+    <script>
+
+        
+       let btn1 = document.querySelector(".box1")
+       btn1.addEventListener("click", bb1)
+       function bb1() {
+        console.log("bb1",btn1);
+        document.body.style.backgroundColor="green";
+       }
+       let btn2 = document.querySelector(".box2")
+       btn2 . addEventListener("click", bb2)
+       function bb2() {
+        console.log("bb2");
+        document.body.style.backgroundColor="yellow";
+       }
+       let btn3 = document.querySelector(".box3")
+       btn3 . addEventListener("click", bb3)
+       function bb3() {
+        console.log("bb3");
+        document.body.style.backgroundColor="pink";
+       }
+       let btn4 = document.querySelector(".box4")
+       btn4 .addEventListener("click", bb4)
+       function bb4() {
+        console.log("bb4");
+        document.body.style.backgroundColor="red";
+       }
+       
+    </script>
+</body>
+</html>
