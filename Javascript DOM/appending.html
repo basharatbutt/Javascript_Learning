@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="parent">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function language(lanname) {
+        let li = document.createElement("li")
+        li.innerHTML = `${lanname} `
+        document.querySelector(".parent").appendChild(li)
+    }
+    language("C++")
+</script>
+</html>
