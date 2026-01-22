@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(134, 102, 182);
+        color: white;
+    }
+
+    .mid {
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    .bk {
+        background-color: rgb(93, 26, 156);
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        border-radius: 22px;
+    }
+
+    #inp {
+        font-size: large;
+    }
+
+    .sub {
+        font-size: large;
+        background-color: rgb(93, 35, 148);
+        border-radius: 12px;
+    }
+
+    .pervious {
+        padding: 11px;
+    }
+</style>
+
+<body>
+    <div class="mid">
+        <h2 class="bk">New Guessing Game</h2>
+        <p>Guess a number between 1 to 100 <br>You have 10 attemps to try </p>
+        <div class="main">
+            <h1>Guess the Number</h1>
+            <input type="number" id="inp" placeholder="Enter a Number">
+            <button class="sub">Submit</button>
+        </div>
+        <span class="pervious">Previous Gusses : </span>
+        <span class="remaining">Remaining Gusses : </span>
+        <span class="result"></span>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
