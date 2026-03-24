@@ -7,8 +7,8 @@ let pervious = document.querySelector(".pervious");
 let reamining = document.querySelector(".remaining");
 let result = document.querySelector(".result");
 let inp = document.querySelector("#inp");
-//condiotional statements, loops, functions
 
+//condiotional statements, loops, functions
 
 
 btn.addEventListener("click", function() {
